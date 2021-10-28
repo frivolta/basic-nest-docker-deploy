@@ -5,4 +5,7 @@ export class AppService {
   getHello(): string {
     return 'Hello World! Odd working';
   }
+  getAnotherHello(): string {
+    return 'Hello World! Odd working';
+  }
 }

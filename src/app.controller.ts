@@ -7,6 +7,10 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return this.appService.getHello();
+    return this.appService.getAnotherHello();
+  }
+  @Get('/another')
+  getAnother(): string {
+    return this.appService.getAnotherHello();
   }
 }
