@@ -14,6 +14,9 @@ RUN npm run build
 
 FROM node:12.19.0-alpine3.9 as production
 
+EXPOSE 3000
+EXPOSE 5432
+
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
